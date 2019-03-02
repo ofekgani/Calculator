@@ -6,23 +6,23 @@
     android:layout_height="match_parent"
     android:layout_weight="1"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edPreview"
         android:layout_width="330dp"
         android:layout_height="0dp"
-        android:layout_weight="0.04"
         android:layout_gravity="center"
+        android:layout_weight="0.04"
         android:ems="10"
+        android:inputType="number"
         android:textSize="18dp"
-        android:textStyle="bold"
-        android:inputType="number" />
+        android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.02"/>
+        android:layout_weight="0.02" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,14 +36,15 @@
             android:layout_weight="0.1" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnPlus"
             android:layout_width="0dp"
             android:layout_height="70dp"
+            android:layout_gravity="center"
             android:layout_weight="0.08"
+            android:text="+"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:layout_gravity="center"
-            android:text="+" />
+            android:onClick="Plus"/>
 
         <Space
             android:layout_width="0dp"
@@ -51,14 +52,15 @@
             android:layout_weight="0.1" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnMinus"
             android:layout_width="0dp"
             android:layout_height="70dp"
+            android:layout_gravity="center"
             android:layout_weight="0.08"
+            android:text="-"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:layout_gravity="center"
-            android:text="-" />
+            android:onClick="Minus"/>
 
         <Space
             android:layout_width="0dp"
@@ -70,7 +72,7 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.02"/>
+        android:layout_weight="0.02" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,14 +86,15 @@
             android:layout_weight="0.1" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnMulti"
             android:layout_width="0dp"
             android:layout_height="70dp"
+            android:layout_gravity="center"
             android:layout_weight="0.08"
+            android:text="*"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:layout_gravity="center"
-            android:text="*" />
+            android:onClick="Multi"/>
 
         <Space
             android:layout_width="0dp"
@@ -99,14 +102,15 @@
             android:layout_weight="0.1" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnDivision"
             android:layout_width="0dp"
             android:layout_height="70dp"
+            android:layout_gravity="center"
             android:layout_weight="0.08"
+            android:text="/"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:layout_gravity="center"
-            android:text="/" />
+            android:onClick="Division"/>
 
         <Space
             android:layout_width="0dp"
@@ -117,12 +121,12 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.02"/>
+        android:layout_weight="0.02" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.2"
+        android:layout_weight="0.3"
         android:orientation="horizontal">
 
         <Space
@@ -131,13 +135,14 @@
             android:layout_weight="0.04" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnClear"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="0.2"
+            android:text="A/c"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:text="A/c" />
+            android:onClick="Clear"/>
 
         <Space
             android:layout_width="0dp"
@@ -145,13 +150,14 @@
             android:layout_weight="0.04" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btnEqual"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="0.2"
+            android:text="="
             android:textSize="18dp"
             android:textStyle="bold"
-            android:text="=" />
+            android:onClick="Equal"/>
 
         <Space
             android:layout_width="0dp"
@@ -171,13 +177,14 @@
             android:layout_weight="0.08" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/btnCredits"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.3"
+            android:text="Credits"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:text="Credits" />
+            android:onClick="credits"/>
 
         <Space
             android:layout_width="wrap_content"
@@ -188,6 +195,6 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.01"/>
+        android:layout_weight="0.01" />
 
 </LinearLayout>
